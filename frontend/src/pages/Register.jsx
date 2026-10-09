@@ -1,6 +1,7 @@
 
-import { useContext, useState } from "react";
-import { AuthContext } from "../Context/AuthContext";
+// import { useContext, useState } from "react";
+// import { AuthContext } from "../Context/AuthContext";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
@@ -8,7 +9,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const { login } = useContext(AuthContext);
+  // const { login } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
